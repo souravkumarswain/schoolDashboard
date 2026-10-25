@@ -1,6 +1,6 @@
 'use client';
 
-import { RadialBarChart, RadialBar, Legend, Tooltip } from 'recharts';
+import { RadialBarChart, RadialBar } from 'recharts';
 // import { RechartsDevtools } from '@recharts/devtools';
 import Image from 'next/image';
 
@@ -22,7 +22,8 @@ const CountChart = () => {
             {/* CHART */}
             <div className='w-full h-[75%] relative'>
                 <RadialBarChart
-                    style={{ aspectRatio:0.700 }}
+                    style={{ width: '100%', height: '100%', aspectRatio: 0.700 }}
+                    responsive
                     cx="50%"
                     cy="50%"
                     innerRadius="40%"

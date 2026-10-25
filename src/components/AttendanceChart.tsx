@@ -38,9 +38,8 @@ const AttendanceChart = () => {
                 <h1 className="text-lg font-semibold">Attendance</h1>
                 <Image src="/moreDark.png" alt="" width={20} height={20} />
             </div>
-            <div className="relative">
             <BarChart
-                style={{ width: '100%', maxWidth: '700px', maxHeight: '70vh', aspectRatio: 0.700, padding:"15px" }}
+                style={{ width: '100%', maxWidth: '680px',height: '100%', maxHeight: '70vh', aspectRatio: 1.618, padding:"12px" }}
                 responsive
                 data={data}
                 margin={{
@@ -62,7 +61,6 @@ const AttendanceChart = () => {
                 <Bar legendType="circle" dataKey="present" fill="#FAE27C" radius={[10, 10, 0, 0]} />
                 <Bar legendType="circle" dataKey="absent" fill="#C3EBFA" radius={[10, 10, 0, 0]} />
             </BarChart>
-            </div>
         </div>
     )
 }
