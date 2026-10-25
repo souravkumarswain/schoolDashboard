@@ -23,7 +23,6 @@ const CountChart = () => {
             <div className='w-full h-[75%] relative'>
                 <RadialBarChart
                     style={{ aspectRatio:0.700 }}
-                    responsive
                     cx="50%"
                     cy="50%"
                     innerRadius="40%"
