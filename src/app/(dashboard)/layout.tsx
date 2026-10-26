@@ -11,7 +11,7 @@ export default function DashboardLayout({
   return (
     <div className="h-screen flex">
         {/* left */}
-        <div className="w-[14%] md:w-[18%] lg:w-[16%] xl:w-[14%] m-3">
+        <div className="w-[14%] md:w-[18%] lg:w-[16%] xl:w-[14%] shrink-0 m-3">
             <Link href="/" 
             className="flex items-center justify-center lg:justify-start gap-2"
             >
@@ -21,7 +21,7 @@ export default function DashboardLayout({
             <Menu/>
         </div>
         {/* right */}
-        <div className="w-[86%] md:w-[82%] lg:w-[84%] xl:w-[86%] bg-[#F7F8FA] overflow-scroll">
+        <div className="flex-1 min-w-0 bg-[#F7F8FA] overflow-scroll w-full">
             <Navbar/>
             {children}
         </div>
