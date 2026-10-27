@@ -3,7 +3,7 @@ import Image from "next/image";
 const Navbar = () => {
     return (
         <div className="h-[68px] w-full">
-            <nav className="fixed top-0 right-0 left-[calc(14vw+24px)] md:left-[calc(18vw+24px)] lg:left-[calc(16vw+24px)] xl:left-[calc(14vw+24px)] flex h-[68px] box-border items-center justify-between bg-[#F7F8FA] p-4">
+            <nav className="fixed top-0 right-0 left-[calc(14vw+24px)] md:left-[calc(18vw+24px)] lg:left-[calc(16vw+24px)] xl:left-[calc(14vw+24px)] flex h-[68px] box-border items-center justify-between bg-[#F7F8FA] p-4 z-40">
                 {/* searchBar */}
                 <div className="hidden md:flex items-center gap-2 text-xs rounded-full ring-[1.5px] ring-gray-300 px-2">
                     <Image src="/search.png" alt="" width={14} height={14} />
